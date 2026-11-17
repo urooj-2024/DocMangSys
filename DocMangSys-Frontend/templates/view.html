@@ -1,0 +1,15 @@
+<!-- templates/view.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Document</title>
+</head>
+<body>
+    <h1>{{ doc.title }}</h1>
+    <p>{{ doc.content }}</p>
+    <a href="{{ url_for('download', doc_id=doc.id) }}">Download</a><br>
+    <a href="{{ url_for('update', doc_id=doc.id) }}">Update</a><br>
+    <a href="{{ url_for('delete', doc_id=doc.id) }}">Delete</a><br>
+    <a href="{{ url_for('index') }}">Back</a>
+</body>
+</html>

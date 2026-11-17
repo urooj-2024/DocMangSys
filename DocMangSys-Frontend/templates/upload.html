@@ -1,0 +1,20 @@
+<!-- templates/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Document</title>
+</head>
+<body>
+    <h1>Upload New Document</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label>Title:</label><br>
+        <input type="text" name="title"><br>
+        <label>Content:</label><br>
+        <textarea name="content"></textarea><br>
+        <label>File:</label><br>
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Documents</a>
+</body>
+</html>
